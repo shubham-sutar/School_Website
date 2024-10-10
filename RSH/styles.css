@@ -110,6 +110,33 @@ footer {
     padding: 10px 0;
 }
 
+/* ======== toggle ========== */
+nav ul {
+    display: block;
+    z-index: 1000;
+    /* Hide by default */
+}
+
+nav ul.active {
+    display:none;
+    /* Show when active */
+}
+
+/* Optional: Style for mobile view */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        /* Stack items */
+        position: absolute;
+        /* Positioning for dropdown */
+        background: white;
+        /* Background for dropdown */
+        width: 100%;
+        /* Full width */
+        top: 60px;
+        /* Adjust according to your header height */
+    }
+}
 
 
 /* ====== About Section ===== */
@@ -479,4 +506,3 @@ body {
     
 
 }
-
