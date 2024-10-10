@@ -40,3 +40,5 @@ function showManualSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+
+
