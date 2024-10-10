@@ -1,3 +1,9 @@
+function toggleMenu() {
+    const navLinks = document.querySelector('nav ul'); // Select the navigation links
+    navLinks.classList.toggle('active'); // Toggle the 'active' class
+}
+
+
 let slideIndex = 0;
 showSlides();
 

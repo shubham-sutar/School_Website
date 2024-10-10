@@ -1,9 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+nav ul {
+    display: none;
+    /* Hide by default */
 }
-html , body{
-    height: 100%;
-    width: 100%;
+
+nav ul.active {
+    display: block;
+    /* Show when active */
+}
+
+/* Optional: Style for mobile view */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        /* Stack items */
+        position: absolute;
+        /* Positioning for dropdown */
+        background: white;
+        /* Background for dropdown */
+        width: 100%;
+        /* Full width */
+        top: 60px;
+        /* Adjust according to your header height */
+    }
 }
